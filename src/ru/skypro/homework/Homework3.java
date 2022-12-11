@@ -23,8 +23,10 @@ public class Homework3 {
         // третье задание
         int date;
         int i;
-        for (i = 0, date = 2021; i >= date - 200 && i <= date + 100; i = i+79) {
-            System.out.println("Столкновение было в" + i + " году");
+        for (date = 2021, i = 0; i <= date + 100; i = i+79) {
+            if (i >= date - 200)
+                System.out.println("Столкновение было в " + i + " году");
+           // System.out.println("Столкновение было в" + i + " году");
         }
 
     }
